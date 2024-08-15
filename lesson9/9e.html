@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input class="input" onkeydown="pressKey(event)"  placeholder="Enter your name">
+    <button onclick="subButton()">Submit</button>
+    <p class="para"></p>
+
+    <script>
+        function subButton() {
+            let name = document.querySelector('.input');
+            let newName = name.value;
+            let para = document.querySelector('.para')
+            para.innerHTML = `Your name is: ${newName}`;
+        }
+
+        function pressKey(event){
+            // console.log(event.key);
+            if(event.key === 'Enter'){
+                subButton();
+            }
+            
+            // 
+        }
+    </script>
+</body>
+
+</html>

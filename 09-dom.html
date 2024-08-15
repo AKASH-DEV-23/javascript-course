@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <button>Hello</button>
+    <button class="save-me-button">Save me</button>
+    
+    <script>
+        let hello = document.querySelector('button');
+        hello.innerText = "hi";
+
+        let save = document.querySelector('.save-me-button');
+        // console.log(typeof save);
+        save.innerHTML = "Error";
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .is-toggled{
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <button class="gaming-button" onclick="press()">Gaming</button>
+    
+    <script>
+        function press(){
+            const gaming = document.querySelector('.gaming-button');
+            if(gaming.classList.contains('is-toggled')){
+                gaming.classList.remove('is-toggled');
+            }
+            else{
+                gaming.classList.add('is-toggled');
+            }
+        }
+        
+
+    </script>
+</body>
+</html>

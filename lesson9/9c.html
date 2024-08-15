@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="headButton()" id="head">heads</button>
+    <button onclick="tailButton()" id="tail">tails</button>
+    <p id="text"></p>
+    
+
+    <script>
+        function headButton(){
+            let text = document.getElementById('text');
+            text.innerHTML = 'You chose: heads';
+        }
+        function tailButton(){
+            let text = document.getElementById('text');
+            text.innerText = 'You chose: tails';
+        }
+
+        
+
+        
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .is-toggled{
+            background-color: black;
+            color:aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <button class="gaming-button" onclick="gaming()">Gaming</button>
+    <button class="music-button" onclick="music()">Music</button>
+    <button class="tech-button" onclick="tech()">Tech</button>
+    
+    <script>
+        function gaming(){
+            let gaming = document.querySelector('.gaming-button');
+            if(gaming.classList.contains('is-toggled')){
+                gaming.classList.remove('is-toggled');
+            }
+            else{
+                gaming.classList.add('is-toggled');
+            }
+        }
+        function music(){
+            let music = document.querySelector('.music-button');
+            if(music.classList.contains('is-toggled')){
+                music.classList.remove('is-toggled');
+            }
+            else{
+                music.classList.add('is-toggled');
+            }
+        }
+        function tech(){
+            let tech = document.querySelector('.tech-button');
+                if(tech.classList.contains('is-toggled')){
+                    tech.classList.remove('is-toggled');
+                } else{
+                    tech.classList.add('is-toggled');
+                }
+            }
+
+
+    </script>
+</body>
+</html>

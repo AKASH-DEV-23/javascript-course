@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .is-toggled-gaming {
+            background-color: black;
+            color: aliceblue;
+        }
+
+        .is-toggled-music {
+            background-color: black;
+            color: aliceblue;
+        }
+
+        .is-toggled-tech {
+            background-color: black;
+            color: aliceblue;
+        }
+    </style>
+</head>
+
+<body>
+    <button class="gaming-button" onclick="gaming()">Gaming</button>
+    <button class="music-button" onclick="music()">Music</button>
+    <button class="tech-button" onclick="tech()">Tech</button>
+
+    <script>
+
+
+        let tech = document.querySelector('.tech-button');
+
+        function gaming() {
+            var gaming = document.querySelector('.gaming-button');
+            // if (music.classList.contains('is-toggled-music')) {
+            //     music.classList.remove('is-toggled-music');
+            // }
+
+            if (gaming.classList.contains('is-toggled-gaming')) {
+                gaming.classList.remove('is-toggled-gaming');
+            }
+            else {
+                gaming.classList.add('is-toggled-gaming');
+            }
+
+            // tech.classList.remove('is-toggled-tech');
+        }
+
+        function music() {
+            var music = document.querySelector('.music-button');
+            gaming.classList.remove('is-toggled-gaming');
+            if (music.classList.contains('is-toggled-music')) {
+                music.classList.remove('is-toggled-music');
+            }
+            else {
+                music.classList.add('is-toggled-music');
+            }
+
+            // tech.classList.remove('is-toggled-tech');
+        }
+
+        // function tech() {
+        //     music.classList.remove('is-toggled-music');
+        //     gaming.classList.remove('is-toggled-gaming');
+        //     if (tech.classList.contains('is-toggled')) {
+        //         tech.classList.remove('is-toggled');
+        //     } else {
+        //         tech.classList.add('is-toggled');
+        //     }
+        // }
+
+
+    </script>
+</body>
+
+</html>
